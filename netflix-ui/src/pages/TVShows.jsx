@@ -14,8 +14,6 @@ function TVShows() {
   const movies = useSelector((state) => state.netflix.movies);
   const genres = useSelector((state) => state.netflix.genres);
   const genresLoaded = useSelector((state) => state.netflix.genresLoaded);
-  const dataLoading = useSelector((state) => state.netflix.dataLoading);
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -29,7 +27,6 @@ function TVShows() {
     }
   }, [genresLoaded]);
 
-  const [user, setUser] = useState(undefined);
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) setUser(currentUser.uid);

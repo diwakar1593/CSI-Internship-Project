@@ -52,6 +52,7 @@ function MoviePage() {
           });
       });
     };
+    
     const getRawData = async (api, genres, paging = false) => {
       const moviesArray = [];
       for (let i = 1; moviesArray.length < 60 && i < 10; i++) {
