@@ -1,12 +1,10 @@
 # CSI-Internship-Project-Netflix
-# Netflix Clone Project Readme
 
 ![Netflix Clone](link_to_project_screenshot_or_logo.png)
 
 ## Table of Contents
 
 - [CSI-Internship-Project-Netflix](#csi-internship-project-netflix)
-- [Netflix Clone Project Readme](#netflix-clone-project-readme)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
