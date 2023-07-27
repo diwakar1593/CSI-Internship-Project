@@ -27,6 +27,7 @@ function TVShows() {
     }
   }, [genresLoaded]);
 
+  const [setUser] = useState(undefined);
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) setUser(currentUser.uid);
