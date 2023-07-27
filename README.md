@@ -12,6 +12,9 @@
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
+  - [Configuration](#configuration)
+    - [Firebase Configuration:](#firebase-configuration)
+    - [MongoDB Configuration:](#mongodb-configuration)
 
 ## Introduction
 
@@ -68,3 +71,20 @@ npm install
 
 ```
 
+## Configuration
+
+Before running the project, you need to configure Firebase and MongoDB:
+
+### Firebase Configuration:
+
+1. Go to the Firebase console (https://console.firebase.google.com/) and create a new project.
+
+2. Obtain your Firebase Web API Key and replace it in the frontend configuration file (frontend/src/firebase.js).
+
+3. Enable Firebase authentication with Email/Password as the sign-in method.
+
+### MongoDB Configuration:
+
+1. Ensure you have MongoDB installed and running on your system.
+
+2. Replace the MongoDB connection URL in the backend configuration file (backend/config/db.js).
