@@ -53,3 +53,18 @@ Before running the project, make sure you have the following installed:
 ```bash
 git clone https://github.com/diwakar1593/CSI-Internship-Project.git
 cd CSI-Internship-Project
+```
+
+2. Install the frontend dependencies:
+```bash
+cd netflix-ui
+npm install
+
+```
+3. Install the backend dependencies:
+```bash
+cd netflix-api
+npm install
+
+```
+
