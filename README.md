@@ -1,6 +1,6 @@
 # CSI-Internship-Project-Netflix
 
-![Netflix Clone](link_to_project_screenshot_or_logo.png)
+![Netflix Clone](screenshot\Screenshot (177).png)
 
 ## Table of Contents
 
