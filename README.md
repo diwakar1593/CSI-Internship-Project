@@ -15,6 +15,10 @@
   - [Configuration](#configuration)
     - [Firebase Configuration:](#firebase-configuration)
     - [MongoDB Configuration:](#mongodb-configuration)
+    - [Usage](#usage)
+  - [Usage](#usage-1)
+  - [API Endpoints](#api-endpoints)
+  - [Contributing](#contributing)
 
 ## Introduction
 
@@ -79,7 +83,7 @@ Before running the project, you need to configure Firebase and MongoDB:
 
 1. Go to the Firebase console (https://console.firebase.google.com/) and create a new project.
 
-2. Obtain your Firebase Web API Key and replace it in the frontend configuration file (frontend/src/firebase.js).
+2. Obtain your Firebase Web API Key and replace it in the frontend configuration file (netflix-ui\src\utils\firebase-config.js).
 
 3. Enable Firebase authentication with Email/Password as the sign-in method.
 
@@ -88,3 +92,44 @@ Before running the project, you need to configure Firebase and MongoDB:
 1. Ensure you have MongoDB installed and running on your system.
 
 2. Replace the MongoDB connection URL in the backend configuration file (backend/config/db.js).
+
+
+### Usage
+
+1. Start the backend server:
+
+```bash
+cd netflix-api
+npm start
+
+```
+
+2. Start the frontend development server:
+```bash
+cd netflix-ui
+npm start
+
+```
+
+## Usage
+
+Access the application in your web browser at http://localhost:3000/.
+
+## API Endpoints
+
+The backend server provides the following API endpoints:
+
+- `GET /api/movies`: Get a list of all available movies.
+- `GET /api/movies/:id`: Get details of a specific movie.
+- `POST /api/movies`: Add a new movie (authentication required).
+- `PUT /api/movies/:id`: Update details of a specific movie (authentication required).
+- `DELETE /api/movies/:id`: Delete a specific movie (authentication required).
+- `GET /api/shows`: Get a list of all available TV shows.
+- `GET /api/shows/:id`: Get details of a specific TV show.
+- `POST /api/shows`: Add a new TV show (authentication required).
+- `PUT /api/shows/:id`: Update details of a specific TV show (authentication required).
+- `DELETE /api/shows/:id`: Delete a specific TV show (authentication required).
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to enhance the project, feel free to create a pull request.
