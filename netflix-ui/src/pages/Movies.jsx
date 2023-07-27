@@ -33,7 +33,7 @@ function MoviePage() {
       return genres;
     });
     dispatch(getGenres());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     const createArrayFromRawData = (array, moviesArray, genres) => {
@@ -52,7 +52,7 @@ function MoviePage() {
           });
       });
     };
-    
+
     const getRawData = async (api, genres, paging = false) => {
       const moviesArray = [];
       for (let i = 1; moviesArray.length < 60 && i < 10; i++) {
@@ -79,9 +79,9 @@ function MoviePage() {
     if (genresLoaded) {
       dispatch(fetchMovies({ genres, type: "movie" }));
     }
-  }, [genresLoaded]);
+  }, [dispatch, genres, genresLoaded]);
 
-  const [user, setUser] = useState(undefined);
+  const [ setUser] = useState(undefined);
 
   onAuthStateChanged(firebaseAuth, (currentUser) => {
     if (currentUser) setUser(currentUser.uid);
