@@ -51,5 +51,5 @@ Before running the project, make sure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/netflix-clone.git
-cd netflix-clone
+git clone https://github.com/diwakar1593/CSI-Internship-Project.git
+cd CSI-Internship-Project
